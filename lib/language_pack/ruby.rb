@@ -606,8 +606,8 @@ WARNING
           run("ln -s /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6 #{yaml_lib}/libsqlite3.so")       # for sqlite3   make symbolic link
           puts `ls #{yaml_lib}`
 
-          puts "cp #{File.expand_path( "../../vendor/sqlite3.h", $PROGRAM_NAME )} #{yaml_include}"
-          run("cp #{File.expand_path( "../../vendor/sqlite3.h", $PROGRAM_NAME )} #{yaml_include}")   # for sqlite3   prepare sqlite3.h
+          puts "cp #{File.expand_path( "../../../vendor/sqlite3.h", $PROGRAM_NAME )} #{yaml_include}"
+          run("cp #{File.expand_path( "../../../vendor/sqlite3.h", $PROGRAM_NAME )} #{yaml_include}")   # for sqlite3   prepare sqlite3.h
           puts `ls #{yaml_include}`
 
           puts "Running: #{bundle_command}"
