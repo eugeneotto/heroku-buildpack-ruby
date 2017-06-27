@@ -9,7 +9,7 @@ It adds sqlite3 support by borrowing from this fork of heroku-buildpack-ruby: ht
 ## Usage
 
 ```sh
-heroku buildpacks:set https://github.com/yotsumoto/heroku-buildpack-ruby-with-sqlite3
+heroku buildpacks:set https://github.com/eugeneotto/heroku-buildpack-ruby
 git push heroku master
 ```
 
