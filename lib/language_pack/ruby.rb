@@ -603,6 +603,9 @@ WARNING
           env_vars["BUNDLER_LIB_PATH"] = "#{bundler_path}" if ruby_version.ruby_version == "1.8.7"
 
           puts "ln -s /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6 #{yaml_lib}/libsqlite3.so"
+          puts `ls #{yaml_lib}`
+          require 'byebug'
+          byebug
           run("ln -s /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6 #{yaml_lib}/libsqlite3.so")       # for sqlite3   make symbolic link
 
           puts "cp #{File.expand_path( "../../vendor/sqlite3.h", $PROGRAM_NAME )} #{yaml_include}"
